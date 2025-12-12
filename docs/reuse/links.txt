@@ -1,0 +1,2 @@
+.. _cloud-init: https://cloudinit.readthedocs.io/
+.. _subiquity: https://canonical-subiquity.readthedocs-hosted.com/

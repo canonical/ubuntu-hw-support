@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1187.8043"
+   height="268.91068"
+   viewBox="0 0 314.27322 71.149287"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="uart-connections.svg"
+   inkscape:export-filename="/home/dave/projects/work/ubuntu-boards-documentation/images/uart-connections.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <style
+     id="style2">
+  @import('/_static/styles/furo_colors.css');
+  text { fill: var(--color-foreground-primary); }
+  path { stroke: var(--color-foreground-primary); }
+  </style>
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="true"
+     inkscape:document-units="mm"
+     showgrid="false"
+     units="px"
+     width="1200px"
+     inkscape:snap-midpoints="true"
+     inkscape:zoom="0.98520767"
+     inkscape:cx="566.88556"
+     inkscape:cy="178.13503"
+     inkscape:window-width="1920"
+     inkscape:window-height="1016"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     fit-margin-top="16"
+     fit-margin-left="16"
+     fit-margin-right="16"
+     fit-margin-bottom="16"
+     lock-margins="true"
+     inkscape:showpageshadow="false" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-1.9853487,-52.653242)">
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.14875;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:6.44626, 2.14875;stop-color:#000000"
+       id="rect897"
+       width="314.27313"
+       height="71.149368"
+       x="1.9853487"
+       y="52.65324" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;line-height:1.25;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+       x="-107.71811"
+       y="12.502539"
+       id="text2388"
+       transform="rotate(-90)"><tspan
+         sodipodi:role="line"
+         id="tspan2386"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;stroke-width:0.264583"
+         x="-107.71811"
+         y="12.502539">Computer</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;line-height:1.25;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+       x="76.645493"
+       y="-305.59256"
+       id="text3426"
+       transform="rotate(90)"><tspan
+         sodipodi:role="line"
+         id="tspan3424"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;stroke-width:0.264583"
+         x="76.645493"
+         y="-305.59256">Board</tspan></text>
+    <g
+       id="g11658">
+      <g
+         id="g11529">
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;line-height:1.25;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+           x="271.81592"
+           y="63.170433"
+           id="text16699"><tspan
+             sodipodi:role="line"
+             id="tspan16697"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;stroke-width:0.264583"
+             x="271.81592"
+             y="63.170433">GND</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;line-height:1.25;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+           x="272.17151"
+           y="82.115646"
+           id="text17451"><tspan
+             sodipodi:role="line"
+             id="tspan17449"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;stroke-width:0.264583"
+             x="272.17151"
+             y="82.115646">TX</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;line-height:1.25;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+           x="271.57886"
+           y="101.05673"
+           id="text18287"><tspan
+             sodipodi:role="line"
+             id="tspan18285"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;stroke-width:0.264583"
+             x="271.57886"
+             y="101.05673">RX</tspan></text>
+      </g>
+      <g
+         id="g11609">
+        <path
+           style="fill:none;stroke:#b5b5b5;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:3, 1;stroke-dashoffset:0;stroke-opacity:1"
+           d="m 105.41842,60.08845 135.75012,-3e-6"
+           id="path36144" />
+        <path
+           style="fill:none;stroke:#b5b5b5;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:3, 1;stroke-dashoffset:0;stroke-opacity:1"
+           d="m 105.41842,97.970614 c 74.63203,-0.10956 73.97301,-18.714461 135.75012,-18.941088"
+           id="path36778"
+           sodipodi:nodetypes="cc" />
+        <path
+           style="fill:none;stroke:#b5b5b5;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:3, 1;stroke-dashoffset:0;stroke-opacity:1"
+           d="m 105.41842,79.029529 c 70.88831,0.278811 71.13062,18.828175 135.75012,18.941085"
+           id="path36465"
+           sodipodi:nodetypes="cc" />
+        <g
+           id="g30781"
+           transform="translate(3.979666,-11.160806)">
+          <g
+             id="g15937"
+             transform="translate(129.05894,4.2088904)">
+            <rect
+               style="fill:#d38d5f;fill-opacity:1;stroke:#d38d5f;stroke-width:0.865;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
+               id="rect15497"
+               width="18.439613"
+               height="1.573568"
+               x="108.12994"
+               y="66.253578" />
+            <rect
+               style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.865;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
+               id="rect15565"
+               width="6.7763157"
+               height="4.5308313"
+               x="125.34164"
+               y="64.774948" />
+          </g>
+          <g
+             id="g30729"
+             transform="translate(129.05894,23.14997)">
+            <rect
+               style="fill:#d38d5f;fill-opacity:1;stroke:#d38d5f;stroke-width:0.865;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
+               id="rect30725"
+               width="18.439613"
+               height="1.573568"
+               x="108.12994"
+               y="66.253578" />
+            <rect
+               style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.865;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
+               id="rect30727"
+               width="6.7763157"
+               height="4.5308313"
+               x="125.34164"
+               y="64.774948" />
+          </g>
+          <g
+             id="g30735"
+             transform="translate(129.05894,42.091055)">
+            <rect
+               style="fill:#d38d5f;fill-opacity:1;stroke:#d38d5f;stroke-width:0.865;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
+               id="rect30731"
+               width="18.439613"
+               height="1.573568"
+               x="108.12994"
+               y="66.253578" />
+            <rect
+               style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.865;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
+               id="rect30733"
+               width="6.7763157"
+               height="4.5308313"
+               x="125.34164"
+               y="64.774948" />
+          </g>
+        </g>
+        <path
+           style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="M 82.59657,60.08845 H 51.162367"
+           id="path30978"
+           sodipodi:nodetypes="cc" />
+        <path
+           style="fill:none;stroke:#00ac1f;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="M 82.596571,79.029529 H 51.162368"
+           id="path31159"
+           sodipodi:nodetypes="cc" />
+        <path
+           style="fill:none;stroke:#dcdcdc;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="M 82.596571,97.970614 H 51.162368"
+           id="path31161"
+           sodipodi:nodetypes="cc" />
+        <g
+           id="g32105"
+           transform="translate(3.979666,-11.160806)">
+          <g
+             id="g15947"
+             transform="translate(0,4.6226115)">
+            <rect
+               style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.865;stroke-linecap:round;stroke-linejoin:round;stop-color:#000000"
+               id="rect14978"
+               width="22.821846"
+               height="3.6258593"
+               x="78.616905"
+               y="64.813713" />
+            <rect
+               style="fill:#ececec;fill-opacity:1;stroke:none;stroke-width:0.865;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+               id="rect15148"
+               width="3.3726513"
+               height="2.4568372"
+               x="94.179604"
+               y="65.398224"
+               ry="0"
+               rx="0" />
+          </g>
+          <g
+             id="g30741"
+             transform="translate(0,23.563691)">
+            <rect
+               style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.865;stroke-linecap:round;stroke-linejoin:round;stop-color:#000000"
+               id="rect30737"
+               width="22.821846"
+               height="3.6258593"
+               x="78.616905"
+               y="64.813713" />
+            <rect
+               style="fill:#ececec;fill-opacity:1;stroke:none;stroke-width:0.865;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+               id="rect30739"
+               width="3.3726513"
+               height="2.4568372"
+               x="94.179604"
+               y="65.398224"
+               ry="0"
+               rx="0" />
+          </g>
+          <g
+             id="g30747"
+             transform="translate(0,42.504776)">
+            <rect
+               style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.865;stroke-linecap:round;stroke-linejoin:round;stop-color:#000000"
+               id="rect30743"
+               width="22.821846"
+               height="3.6258593"
+               x="78.616905"
+               y="64.813713" />
+            <rect
+               style="fill:#ececec;fill-opacity:1;stroke:none;stroke-width:0.865;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+               id="rect30745"
+               width="3.3726513"
+               height="2.4568372"
+               x="94.179604"
+               y="65.398224"
+               ry="0"
+               rx="0" />
+          </g>
+        </g>
+        <path
+           style="fill:none;stroke:#ff1f1f;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="M 82.594473,116.82302 H 51.16027"
+           id="path32189"
+           sodipodi:nodetypes="cc" />
+        <g
+           id="g32094"
+           transform="translate(3.979666,50.196385)">
+          <rect
+             style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.865;stroke-linecap:round;stroke-linejoin:round;stop-color:#000000"
+             id="rect32090"
+             width="22.821846"
+             height="3.6258593"
+             x="78.616905"
+             y="64.813713" />
+          <rect
+             style="fill:#ececec;fill-opacity:1;stroke:none;stroke-width:0.865;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+             id="rect32092"
+             width="3.3726513"
+             height="2.4568372"
+             x="94.179604"
+             y="65.398224"
+             ry="0"
+             rx="0" />
+        </g>
+      </g>
+      <g
+         id="g11521"
+         transform="translate(1.0583333)">
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;line-height:1.25;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+           x="26.890167"
+           y="63.400173"
+           id="text30873"><tspan
+             sodipodi:role="line"
+             id="tspan30871"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;stroke-width:0.264583"
+             x="26.890167"
+             y="63.400173">GND</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;line-height:1.25;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+           x="34.205368"
+           y="82.34539"
+           id="text30877"><tspan
+             sodipodi:role="line"
+             id="tspan30875"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;stroke-width:0.264583"
+             x="34.205368"
+             y="82.34539">TX</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;line-height:1.25;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+           x="33.629627"
+           y="101.28647"
+           id="text30881"><tspan
+             sodipodi:role="line"
+             id="tspan30879"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;stroke-width:0.264583"
+             x="33.629627"
+             y="101.28647">RX</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;line-height:1.25;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+           x="29.269297"
+           y="119.4493"
+           id="text33101"><tspan
+             sodipodi:role="line"
+             id="tspan33099"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;stroke-width:0.264583"
+             x="29.269297"
+             y="119.4493">+5V</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>

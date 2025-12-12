@@ -33,3 +33,4 @@ vale
 
 # Extensions needed by this docs set
 sphinx-prompt
+sphinxext-rediraffe
