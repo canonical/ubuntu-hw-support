@@ -25,8 +25,8 @@ Boot source selection
 ---------------------
 
 The Milk-V Mars CM board can boot firmware from SPI flash or UART.
-The boot source is selected via the nRPIBOOT line. When connected to ground
-booting form UART is selected.
+The boot source is selected via the nRPIBOOT line. When connected to ground,
+booting from UART is selected.
 
 On the Waveshare CM4-IO-BASE-A board a switch labeled "BOOT" is connected to
 the nRPIBOOT line. Switch it to to "OFF" to boot from SPI flash and to "ON" to
