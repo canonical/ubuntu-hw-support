@@ -9,21 +9,22 @@ Ubuntu provides both pre-installed images as well as installer images.
 
 The build process of installer images involves multiple steps:
 
-* Ubuntu package livecd-rootfs is used to create multiple file system layers
-  as squashfs file systems, e.g.
+* Ubuntu package :lp-pkg:`livecd-rootfs` is used to create multiple file system
+  layers as squashfs file systems, e.g.
 
   - livecd.ubuntu-server.ubuntu-server-minimal.squashfs
   - livecd.ubuntu-server.ubuntu-server-minimal.ubuntu-server.installer.generic.squashfs
   - livecd.ubuntu-server.ubuntu-server-minimal.ubuntu-server.installer.squashfs
   - livecd.ubuntu-server.ubuntu-server-minimal.ubuntu-server.squashfs
 
-* `ubuntu-cdimage <https://git.launchpad.net/ubuntu-cdimage>` takes these
+* `Ubuntu-cdimage <https://git.launchpad.net/ubuntu-cdimage>`_ takes these
   squashfs file systems and packages them as an ISO image.
 
-Patching these tools to create an ISO image is tedious and error prone.
+Patching these tools to create an ISO image is tedious and error-prone.
 
 It is much easier to take an existing live-installer image and to patch it to
-your needs.
+your needs. `Livefs-editor <https://github.com/mwhudson/livefs-editor>`_
+is the tool of choice for this task.
 
 Installing livefs-editor
 ------------------------
@@ -47,8 +48,8 @@ For a system-wide installation you can use:
 Using livefs-editor
 -------------------
 
-The livefs-editor
-`README <https://github.com/mwhudson/livefs-editor/blob/main/README.md#actions>`
+The livefs-editor `README
+<https://github.com/mwhudson/livefs-editor/blob/main/README.md#actions>`_
 gives an overview of the different actions that the tool can take.
 
 Best practice is to use a yaml file describing all desired actions and
@@ -80,7 +81,7 @@ packages from there.
 
 These are installed by the ``install-packages`` action.
 
-With the ``rm`` a package is removed from the ISO.
+With the ``rm`` action a package is removed from the ISO.
 
 The ``replace-kernel`` action replaces the generic Linux kernel by a vendor
 kernel package linux-image-vendorflavor located in the vendor PPA with all
