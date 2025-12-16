@@ -7,7 +7,14 @@ Documentation for installing Ubuntu on a variety of (typically non-PC) hardware,
 
 Currently, the repository hosts two documentation sets that used to be published separately. Eventually, the plan is for all the content to be consolidated into one coherent collection of docs.
 
-The generated documentation is hosted at [canonical-ubuntu-hardware-support.readthedocs-hosted.com](https://canonical-ubuntu-hardware-support.readthedocs-hosted.com/).
+
+## Project homepage
+
+The project Git repository is located at [ https://github.com/canonical/ubuntu-hw-support](https://github.com/canonical/ubuntu-hw-support/).
+
+The generated documentation is hosted at [ubuntu-hw-support.readthedocs-hosted.com](https://canonical-ubuntu-hardware-support.readthedocs-hosted.com/).
+
+The continuous integration results are available at [ubuntu-hw-support/actions](https://github.com/canonical/ubuntu-hw-support/actions/).
 
 
 ## RISC-V image cookbook
