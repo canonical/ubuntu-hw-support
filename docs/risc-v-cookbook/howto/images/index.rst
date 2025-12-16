@@ -7,3 +7,4 @@ Images
    :maxdepth: 2
 
    create_image
+   create_installer_image
