@@ -53,11 +53,14 @@ The livefs-editor `README
 gives an overview of the different actions that the tool can take.
 
 Best practice is to use a yaml file describing all desired actions and
-to invoke livefs-editor with it:
+to invoke livefs-editor with it. The livefs-edit command must be run as
+root.
 
 .. code-block:: text
 
-    sudo livefs-editor old.iso new.iso --action-yaml update.yaml
+    sudo -s
+    . myvenv/bin/activate
+    livefs-edit old.iso new.iso --action-yaml update.yaml
 
 Here is an example yaml file:
 

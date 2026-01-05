@@ -24,6 +24,7 @@ hardware under Ubuntu.
     sipeed-licheerv-dock
     starfive-visionfive
     starfive-visionfive-2
+    starfive-visionfive-2-lite
 
 The following entries detail the use of certain pieces of specialist hardware,
 and methods of debugging common boot problems.

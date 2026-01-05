@@ -214,6 +214,8 @@ linkcheck_ignore = [
     "https://www.gnu.org/software/grub/",
     "https://linux-sunxi.org/Ethernet",
     "https://frame.work/de/en/products/deep-computing-risc-v-mainboard",
+    "https://www.kickstarter.com/projects/starfive/visionfive-2-lite-unlock-risc-v-sbc-at-199",
+    r"https:\/\/www.microchip.com\/.*",
     r".*\/_images\/",
 ]
 

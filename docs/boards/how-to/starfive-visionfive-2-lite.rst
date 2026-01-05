@@ -1,13 +1,14 @@
-.. _install-ubuntu-on-the-milk-v-mars-cm-and-cm-lite:
+.. _install-ubuntu-on-the-starfive-visionfive-2-lite:
 
-Install Ubuntu on the Milk-V Mars CM and CM Lite
+Install Ubuntu on the StarFive VisionFive 2 Lite
 ================================================
 
-The `Milk-V Mars CM`_ is a RISC-V based :term:`SBC`.
+The `StarFive VisionFive 2 Lite`_ is a RISC-V based :term:`SBC`.
 
 .. warning::
 
-    The Milk-V Mars CM is not yet supported by official Ubuntu images.
+    The StarFive VisionFive 2 Lite is not yet supported by official Ubuntu
+    images.
 
 Using the pre-installed server image
 ------------------------------------
@@ -15,9 +16,11 @@ Using the pre-installed server image
 #. Download one of the supported images.
 
 #. Flash the pre-installed server image to a microSD card (see
-   :ref:`flash-images-to-a-microsd-card`) or a USB drive.
+   :ref:`flash-images-to-a-microsd-card`)
 
-#. Insert the microSD card into the board or attach the USB drive.
+#. Insert the microSD card into the board
+
+#. Set the boot source to the microSD card (see `Boot source selection`_)
 
 #. Connect a USB UART adapter to the :term:`UART` on the :term:`GPIO` header
    (see `UART console`_ and :ref:`connect-to-a-uart-console`)
@@ -59,11 +62,14 @@ flash.
     The vendor U-Boot is not compatible with :term:`EBBR` and cannot boot
     Ubuntu without manual changes.
 
+
 Install U-Boot to the SPI flash
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 #. Flash the pre-installed server image to a microSD card (see
-   :ref:`flash-images-to-a-microsd-card`) or to a USB drive.
+   :ref:`flash-images-to-a-microsd-card`)
+
+#. Insert the microSD card into the board
 
 #. Set the boot source to the microSD card (see `Boot source selection`_)
 
@@ -83,8 +89,6 @@ Install U-Boot to the SPI flash
        sf update $kernel_addr_r 0 $filesize
        load mmc 1:1 $kernel_addr_r /usr/lib/u-boot/starfive_visionfive2/u-boot.itb
        sf update $kernel_addr_r 0x100000 $filesize
-
-   Replace ``mmc 1:1`` by ``usb 0:1`` when using a USB drive.
 
 #. Switch the board off
 
@@ -110,9 +114,9 @@ Boot the live server image
 #. Download one of the supported images.
 
 #. Flash the live server image to a microSD card (see
-   :ref:`flash-images-to-a-microsd-card`) or a USB drive.
+   :ref:`flash-images-to-a-microsd-card`)
 
-#. Insert the microSD card into the board or attach the USB drive.
+#. Insert the microSD card into the board
 
 #. Ensure the boot source is SPI flash (see `Boot source selection`_), *not*
    microSD card
@@ -151,39 +155,27 @@ Boot the live server image
     You can do this manually using U-Boot's :command:`eficonfig` command.
 
 
-NVMe support
-------------
-
-For attaching an NVMe drive the Waveshare CM4-IO-BASE-A board can be used.
-
-.. warning::
-
-    On the Raspberry Pi Compute Module 5 IO Board NVMe drives do not work.
-
-    The Milk-V Mars CM does not drive the line PCIE_PWR_EN to enable
-    power to the m.2 connector.
-
 Boot source selection
 ---------------------
 
-The Milk-V Mars CM board can boot firmware from SPI flash or UART.
-The boot source is selected via the nRPIBOOT line. When connected to ground,
-booting from UART is selected.
+The StarFive VisionFive 2 board can boot firmware from SPI flash or UART.
+eMMC, or UART. The boot source is selected via DIP switches.
 
-On the Waveshare CM4-IO-BASE-A board a switch labeled "BOOT" is connected to
-the nRPIBOOT line. Switch it to to "OFF" to boot from SPI flash and to "ON" to
-boot from UART.
+To boot from UART the button marked `Boot` must be held pressed.
 
-.. image:: /images/milk-v-mars-cm-boot-select.jpg
-    :width: 20em
-    :alt: Boot select
+Cloud-init seed
+---------------
+
+Sample files for a cloud-init seed are present on the FAT partition labeled
+"CIDATA". See :ref:`configure-your-board-for-headless-use` for more information.
+
 
 UART console
 ------------
 
-The :term:`UART` is available on the Waveshare CM4-IO-BASE-A board via the
-:term:`GPIO` connector. Assuming the typical coloring of USB to :term:`TTL`
-serial adapters the following connections have to be made:
+The :term:`UART` console is accessible via the :term:`GPIO` header. Assuming
+the typical coloring of USB to :term:`TTL` serial adapters the following
+connections have to be made:
 
 =========== ==========
 Board       Adapter
@@ -193,11 +185,9 @@ TX,  pin  8 RX,  white
 RX,  pin 10 TX,  green
 =========== ==========
 
-Do not connect the red 3.3 V wire.
-
-.. image:: /images/milk-v-mars-cm-uart.jpg
-    :width: 20em
-    :alt: UART
+.. image:: /images/starfive-visionfive-2-lite-gpio.jpg
+    :width: 15em
+    :alt: GPIO
 
 Connect with the following settings (see :ref:`connect-to-a-uart-console`):
 
@@ -216,8 +206,5 @@ Limitations
 * PCIe support is incomplete: an NVMe drive can be used, but Wi-Fi cards and
   external GPUs don't work
 
-* While the 3 USB 3.0 ports are working, the USB 2.0 port is not supported by
-  the 6.8 kernel
 
-
-.. _Milk-V Mars CM: https://milkv.io/mars-cm
+.. _StarFive VisionFive 2 Lite: https://www.kickstarter.com/projects/starfive/visionfive-2-lite-unlock-risc-v-sbc-at-199

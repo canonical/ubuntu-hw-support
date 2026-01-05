@@ -24,6 +24,7 @@ DKMS
 DSI
 Debhelper
 DeepComputing
+dtoverlay
 EBBR
 EDID
 EDK
