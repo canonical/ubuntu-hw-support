@@ -1,6 +1,6 @@
 .. SPDX-License-Identifier: CC-BY-SA-4.0
 
-.. _risc-v-how-to-guides:
+.. _how-to-guides:
 
 How-to guides
 =============

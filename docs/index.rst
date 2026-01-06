@@ -6,7 +6,7 @@ Ubuntu hardware support documentation
    :maxdepth: 2
 
    boards/index
-   risc-v-cookbook/index
+   image-cookbook/index
    contributing
 
 .. grid:: 1 1 1 1
@@ -17,8 +17,8 @@ Ubuntu hardware support documentation
 
 	How to install Ubuntu on specific hardware like Raspberry Pi and RISC-V
 
-    .. grid-item-card:: :ref:`risc-v-image-cookbook`
-        :link: risc-v-image-cookbook
+    .. grid-item-card:: :ref:`image-cookbook`
+        :link: image-cookbook
         :link-type: ref
 
 	How to create customized Ubuntu images

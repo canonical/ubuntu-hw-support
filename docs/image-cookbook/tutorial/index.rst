@@ -1,11 +1,13 @@
 .. SPDX-License-Identifier: CC-BY-SA-4.0
 
-.. _risc-v-explanation:
+.. _tutorials:
 
-Explanation
-===========
+Tutorials
+=========
+
 
 .. toctree::
    :maxdepth: 1
 
-   bootflow
+   create_image
+   create_kernel

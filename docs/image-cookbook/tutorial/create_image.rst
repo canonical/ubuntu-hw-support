@@ -7,6 +7,13 @@ Your first Ubuntu image
 
 This tutorial will walk you through creating your first Ubuntu image
 and launching it in a virtual machine.
+For the tutorial, we will build the Ubuntu RISC-V image.
+
+
+.. note::
+
+    To find the specific instruction for a given platform, you can take a look
+    into :ref:`reference`.
 
 Install dependencies
 --------------------

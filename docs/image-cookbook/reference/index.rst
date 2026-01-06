@@ -1,6 +1,6 @@
 .. SPDX-License-Identifier: CC-BY-SA-4.0
 
-.. _risc-v-reference:
+.. _reference:
 
 Reference
 =========
@@ -14,3 +14,4 @@ Reference
    image_checklist
    kernel_testcases
    tools
+   risc-v/index

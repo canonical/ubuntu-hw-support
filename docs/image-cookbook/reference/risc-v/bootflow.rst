@@ -1,6 +1,6 @@
 .. SPDX-License-Identifier: CC-BY-SA-4.0
 
-.. _boot-flow:
+.. _risc-v_boot-flow:
 
 Boot flow
 =========
