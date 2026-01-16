@@ -43,6 +43,12 @@ Here is a typical workflow:
 .. image:: /images/workflow.png
    :alt: Typical workflow
 
+The produced image will take all packages that are not device specific from the
+Ubuntu archive. This ensures that devices will receive all package updates.
+
+All device specific packages will be taken from the public PPA. It will be the
+device PPA owner's obligation to ensure security updates.
+
 Setup Launchpad
 ---------------
 
