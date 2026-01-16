@@ -79,13 +79,8 @@ ogp_image = "https://assets.ubuntu.com/v1/cc828679-docs_illustration.svg"
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-html_context
 
 html_context = {
-    # Product page URL; can be different from product docs URL
-    #  Change to your product website URL,
-    #       dropping the 'https://' prefix, e.g. 'ubuntu.com/lxd'.
-    #  If there's no such website,
-    #       remove the {{ product_page }} link from the page header template
-    #       (usually .sphinx/_templates/header.html; also, see README.rst).
-    "product_page": "documentation.ubuntu.com",
+    "docs_page_url": "https://docs.ubuntu.com",
+    "docs_page_title": "Ubuntu documentation directory",
     #
     # Product tag image; the orange part of your logo, shown in the page header
     #  To add a tag image, uncomment and update as needed.
@@ -181,7 +176,7 @@ sitemap_excludes = [
 #######################
 
 # html_static_path = ["_static"]
-# templates_path = ["_templates"]
+templates_path = [".sphinx/_templates"]
 
 #############
 # Redirects #
