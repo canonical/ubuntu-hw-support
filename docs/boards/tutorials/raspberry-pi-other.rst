@@ -87,7 +87,7 @@ Flashing the boot media
 #. Once writing is complete, it will re-read the media to verify the image was
    written successfully, then prompt you to remove your media
 
-.. _snap of rpi-imager: https://snapstore.io/rpi-imager
+.. _snap of rpi-imager: https://snapcraft.io/rpi-imager
 .. _Raspberry Pi software page: https://www.raspberrypi.com/software/
 
 
