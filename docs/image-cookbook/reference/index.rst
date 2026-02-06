@@ -15,3 +15,4 @@ Reference
    kernel_testcases
    tools
    risc-v/index
+   dragonwing/index
