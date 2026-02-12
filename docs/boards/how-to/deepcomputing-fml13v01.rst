@@ -20,7 +20,7 @@ Using the pre-installed server image
 #. Download one of the supported images:
 
    .. ubuntu-images:
-       :releases: noble-plucky
+       :releases: noble
        :archs: riscv64
        :matches: (jh7110\.img.xz)
 

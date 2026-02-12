@@ -48,7 +48,7 @@ attached to the M.2 slot on the board.
 #. Download one of the supported images:
 
    .. ubuntu-images:
-       :releases: noble-plucky
+       :releases: noble
        :image-types: live-server
        :archs: riscv64
 
