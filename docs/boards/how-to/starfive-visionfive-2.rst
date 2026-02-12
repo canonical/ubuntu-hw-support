@@ -11,8 +11,8 @@ Using the pre-installed server image
 
 #. Download one of the supported images:
 
-   .. ubuntu-images::
-       :releases: noble-plucky
+   .. ubuntu-images:
+       :releases: noble
        :archs: riscv64
        :matches: (visionfive2\.img.xz|jh7110\.img.xz)
 
@@ -120,8 +120,8 @@ Boot the live server image
 
 #. Download one of the supported images:
 
-   .. ubuntu-images::
-       :releases: noble-plucky
+   .. ubuntu-images:
+       :releases: noble
        :image-types: live-server
        :archs: riscv64
 

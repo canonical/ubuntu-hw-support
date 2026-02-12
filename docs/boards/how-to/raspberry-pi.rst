@@ -106,7 +106,7 @@ Using the pre-installed server image
 
 #. Download one of the supported images:
 
-   .. ubuntu-images::
+   .. ubuntu-images:
        :releases: focal-
        :suffix: +raspi
        :image-types: preinstalled-server
@@ -142,7 +142,7 @@ Using the pre-installed desktop image
 
 #. Download one of the supported images:
 
-   .. ubuntu-images::
+   .. ubuntu-images:
        :releases: focal-
        :suffix: +raspi
        :image-types: preinstalled-desktop

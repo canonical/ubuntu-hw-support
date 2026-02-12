@@ -17,7 +17,7 @@ Using the pre-installed server image
 
 #. Download one of the supported images:
 
-   .. ubuntu-images::
+   .. ubuntu-images:
        :releases: noble-
        :suffix: +pic64gx
 
