@@ -5,19 +5,19 @@ Install Ubuntu on the Milk-V Mars CM and CM Lite
 
 The `Milk-V Mars CM`_ is a RISC-V based :term:`SBC`.
 
-.. warning::
-
-    The Milk-V Mars CM is not yet supported by official Ubuntu images.
-
 Using the pre-installed server image
 ------------------------------------
 
-#. Download one of the supported images.
+#. Download one of the supported images:
 
-#. Flash the pre-installed server image to a microSD card (see
-   :ref:`flash-images-to-a-microsd-card`) or a USB drive.
+   .. ubuntu-images:
+       :releases: noble
+       :archs: riscv64
+       :matches: (jh7110\.img.xz)
 
-#. Insert the microSD card into the board or attach the USB drive.
+#. Flash the pre-installed server image to a USB drive.
+
+#. Attach the USB drive.
 
 #. Connect a USB UART adapter to the :term:`UART` on the :term:`GPIO` header
    (see `UART console`_ and :ref:`connect-to-a-uart-console`)
@@ -26,12 +26,11 @@ Using the pre-installed server image
 
 #. When "Hit any key to stop autoboot" is displayed, press :kbd:`Enter`
 
-#. Reset the U-Boot environment with the following commands:
+#. Reset the U-Boot environment with the following command:
 
    .. code-block:: text
 
-       env default -f -a
-       env save
+       env erase
 
 #. Power cycle the board
 
@@ -62,10 +61,19 @@ flash.
 Install U-Boot to the SPI flash
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-#. Flash the pre-installed server image to a microSD card (see
-   :ref:`flash-images-to-a-microsd-card`) or to a USB drive.
+#. Download package package u-boot-starfive from
+   https://launchpad.net/ubuntu/+source/u-boot/
 
-#. Set the boot source to the microSD card (see `Boot source selection`_)
+#. Unpack the debian package with
+
+   .. code-block:: bash
+
+       dpkg -x u-boot-starfive*.deb u-boot-starfive
+
+#. Copy the following files from package u-boot-starfive to a USB drive:
+
+   * u-boot-starfive/usr/lib/u-boot/starfive_visionfive2/u-boot.bin
+   * u-boot-starfive/usr/lib/u-boot/starfive_visionfive2/u-boot-spl.bin.normal.out
 
 #. Connect a USB UART adapter to the :term:`UART` on the :term:`GPIO` header
    (see `UART console`_ and :ref:`connect-to-a-uart-console`)
@@ -79,16 +87,12 @@ Install U-Boot to the SPI flash
    .. code-block:: text
 
        sf probe
-       load mmc 1:1 $kernel_addr_r /usr/lib/u-boot/starfive_visionfive2/u-boot-spl.bin.normal.out
+       load usb 0:1 $kernel_addr_r u-boot-spl.bin.normal.out
        sf update $kernel_addr_r 0 $filesize
-       load mmc 1:1 $kernel_addr_r /usr/lib/u-boot/starfive_visionfive2/u-boot.itb
+       load usb 0:1 $kernel_addr_r u-boot.itb
        sf update $kernel_addr_r 0x100000 $filesize
 
-   Replace ``mmc 1:1`` by ``usb 0:1`` when using a USB drive.
-
 #. Switch the board off
-
-#. Set the boot source to the SPI flash (see `Boot source selection`_)
 
 #. Power on the board
 
@@ -109,13 +113,9 @@ Boot the live server image
 
 #. Download one of the supported images.
 
-#. Flash the live server image to a microSD card (see
-   :ref:`flash-images-to-a-microsd-card`) or a USB drive.
+#. Flash the live server image to a USB drive.
 
-#. Insert the microSD card into the board or attach the USB drive.
-
-#. Ensure the boot source is SPI flash (see `Boot source selection`_), *not*
-   microSD card
+#. Attach the USB drive.
 
 #. Connect a USB UART adapter to the UART on the GPIO header (see
    `UART console`_ and :ref:`connect-to-a-uart-console`)
@@ -123,7 +123,7 @@ Boot the live server image
 #. Power on the board
 
 #. If no prior operating system installation exists, U-Boot will start up
-   :term:`GRUB` on the microSD card. Go to step 9
+   :term:`GRUB` on the USB drive. In this case you can skip the next step.
 
 #. If a prior operating system exists, press :kbd:`Enter` when "Hit any key to
    stop autoboot" is displayed, and enter:
@@ -141,9 +141,6 @@ Boot the live server image
 #. Loading the installer takes some time. Once it is loaded, follow the
    `Ubuntu Server installation tutorial
    <https://ubuntu.com/tutorials/install-ubuntu-server>`_
-
-#. Once the installation is complete, reboot the board without removing the
-   microSD card
 
 .. note::
 
