@@ -11,7 +11,7 @@ Using the pre-installed server image
 
 #. Download one of the supported images:
 
-   .. ubuntu-images::
+   .. ubuntu-images:
        :releases: noble-
        :suffix: +unmatched
 
@@ -47,7 +47,7 @@ attached to the M.2 slot on the board.
 
 #. Download one of the supported images:
 
-   .. ubuntu-images::
+   .. ubuntu-images:
        :releases: noble-plucky
        :image-types: live-server
        :archs: riscv64

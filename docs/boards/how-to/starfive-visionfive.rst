@@ -11,7 +11,7 @@ This board is no longer supported beyond 22.04 (Jammy Jellyfish).
 
 #. Download one of the supported images:
 
-   .. ubuntu-images::
+   .. ubuntu-images:
        :releases: jammy
        :suffix: +visionfive
 
