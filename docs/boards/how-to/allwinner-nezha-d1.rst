@@ -13,7 +13,7 @@ Using the pre-installed server image
 
    .. ubuntu-images::
        :releases: jammy-
-       :suffix: +nezha
+       :suffixes: +nezha
 
 #. Flash the pre-installed server image to an SD card (see
    :ref:`flash-images-to-a-microsd-card`)

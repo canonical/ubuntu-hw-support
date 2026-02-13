@@ -13,7 +13,7 @@ Using the pre-installed server image
 
    .. ubuntu-images::
        :releases: noble-
-       :suffix: +unmatched
+       :suffixes: +unmatched
 
 #. Flash the pre-installed server image to a microSD card (see
    :ref:`flash-images-to-a-microsd-card`)
