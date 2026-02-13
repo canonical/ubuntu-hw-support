@@ -5,11 +5,6 @@ Install Ubuntu on the StarFive VisionFive 2 Lite
 
 The `StarFive VisionFive 2 Lite`_ is a RISC-V based :term:`SBC`.
 
-.. warning::
-
-    The StarFive VisionFive 2 Lite is not yet supported by official Ubuntu
-    images.
-
 Using the pre-installed server image
 ------------------------------------
 
