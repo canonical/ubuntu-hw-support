@@ -232,6 +232,11 @@ linkcheck_retries = 3
 #       substitution, deflist, linkify
 # myst_enable_extensions = set()
 
+# Append the path for the ubuntu_images extension; remove this if/when the
+# sphinx_ubuntu_images package is brought up to date
+import sys
+sys.path.append('./_ext')
+
 # Custom Sphinx extensions; see
 # https://www.sphinx-doc.org/en/master/usage/extensions/index.html
 # NOTE: The canonical_sphinx extension is required for the starter pack.
@@ -249,7 +254,7 @@ extensions = [
     "sphinx_related_links",
     "sphinx_roles",
     "sphinx_terminal",
-    "sphinx_ubuntu_images",
+    #"sphinx_ubuntu_images",
     "sphinx_youtube_links",
     "sphinxcontrib.cairosvgconverter",
     "sphinx_last_updated_by_git",
@@ -259,6 +264,7 @@ extensions = [
     "sphinx-prompt",
     "sphinx.ext.extlinks",
     "sphinxext.rediraffe",
+    "ubuntu_images",
 ]
 
 # Excludes files or directories from processing
