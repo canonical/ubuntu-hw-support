@@ -11,7 +11,7 @@ Using the pre-installed server image
 
 #. Download one of the supported images:
 
-   .. ubuntu-images:
+   .. ubuntu-images::
        :releases: jammy-
        :suffix: +nezha
 
