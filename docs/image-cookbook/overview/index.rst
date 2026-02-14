@@ -1,11 +1,11 @@
 .. SPDX-License-Identifier: CC-BY-SA-4.0
 
-.. _risc-v-overview:
+.. _overview:
 
 Overview
 ========
 
-The RISC-V Image Cookbook is meant to help users to spin Ubuntu based images
+The image cookbook is meant to help users to spin Ubuntu based images
 for hardware that is not yet supported by the Ubuntu distribution.
 
 It will guide you through these steps of your project:
@@ -27,8 +27,8 @@ For getting started you will have to create an overview of which aspects
 of current Ubuntu does not fulfill your needs. Typical items are:
 
 * vendor Linux kernel
-* vendor Xorg and Mesa packages
-* vendor U-Boot required on the image
+* vendor GL/EGL packages
+* vendor bootloader required on the image
 * additional packages
 * configuration files
 

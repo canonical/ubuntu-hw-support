@@ -14,4 +14,4 @@
 # Example:
 # redirect/from/file/ redirect/to/file/
 
-risc-v-cookbook/contributing/ contributing/
+image-cookbook/contributing/ contributing/
