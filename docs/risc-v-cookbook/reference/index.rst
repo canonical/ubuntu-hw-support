@@ -9,6 +9,7 @@ Reference
 .. toctree::
    :maxdepth: 1
 
+   firmware_requirements
    gadget_definition
    image_definition
    image_checklist
