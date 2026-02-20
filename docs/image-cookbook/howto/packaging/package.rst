@@ -52,7 +52,7 @@ Steps to package binaries as ``.deb``
    The ``debian/`` directory must now include templates for essential files. Among those are:
 
    - ``debian/control``: Metadata about the package, such as its name, section, description, dependencies,
-     and maintainer. See the `Debian Policy Manual: Control Files 
+     and maintainer. See the `Debian Policy Manual: Control Files
      <https://www.debian.org/doc/debian-policy/ch-controlfields.html#debian-source-package-template-control-files-debian-control>`_
      for detailed information.
 

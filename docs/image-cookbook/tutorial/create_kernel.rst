@@ -11,7 +11,7 @@ using ``ukpack``.
 Requirements
 ------------
 
-You need a Git repository containing your custom kernel tree.  
+You need a Git repository containing your custom kernel tree.
 For this tutorial, we use the upstream Linux kernel and modify it
 to simulate a custom kernel.
 
