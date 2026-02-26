@@ -10,10 +10,10 @@ Using the pre-installed server image
 
 #. Download one of the supported images:
 
-   .. ubuntu-images:
+   .. ubuntu-images::
        :releases: noble
        :archs: riscv64
-       :matches: (jh7110\.img.xz)
+       :matches: (24\.04\.[4-9]-.*jh7110\.img.xz)
 
 #. Flash the pre-installed server image to a USB drive.
 
