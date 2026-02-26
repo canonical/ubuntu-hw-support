@@ -9,4 +9,4 @@ currently no maintenance of images by Canonical.
 .. toctree::
     :maxdepth: 1
 
-    pine64-rock64-4a.rst
+    raxda-rock-4a
