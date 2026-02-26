@@ -235,6 +235,7 @@ pwauth
 py
 qcam
 qemu
+Radxa
 reStructured
 repo
 risc

@@ -1,15 +1,15 @@
-.. _install-ubuntu-on-the-pine64-rock64-4a:
+.. _install-ubuntu-on-the-raxda-rock-4a:
 
-Install Ubuntu on the Pine64 Rock64 4A
-=======================================
+Install Ubuntu on the Radxa ROCK Pi 4A
+======================================
 
-For the instructions below a Pine64 Rock64 4A board with an NVMe drive
+For the instructions below a Radxa ROCK Pi 4A board with an NVMe drive
 is presumed.
 A HDMI monitor, a USB keyboard, and a USB mouse have to be connected.
 
 .. warning::
 
-     On the Pine64 Rock64 4A U-Boot can either be located on SPI flash
+     On the Radxa ROCK Pi 4A U-Boot can either be located on SPI flash
      or on the SD-card.
      Here it is assumed that U-Boot has been erased from the SPI flash
      and the device boots via U-Boot from the SD card.
@@ -82,7 +82,7 @@ Insert the SD-card in to an SD-card reader.
 Run installer
 -------------
 
-Insert the SD-card into the Pine64 Rock64 4A and power on the device.
+Insert the SD-card into the Radxa ROCK Pi 4A and power on the device.
 
 The baudrate of the serial console is 1500000. As of U-Boot 2025.10 output is
 only shown on the video console and not on the serial console.
