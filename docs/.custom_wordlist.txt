@@ -88,6 +88,7 @@ QEMU's
 QSPI
 Quokka
 RPI
+rsync
 RTS
 RVA
 SATA
@@ -266,6 +267,7 @@ txt
 uaccess
 ubuntu
 ukpack
+umount
 unformatted
 unpatched
 untarred
