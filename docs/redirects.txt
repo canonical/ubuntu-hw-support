@@ -15,3 +15,18 @@
 # redirect/from/file/ redirect/to/file/
 
 image-cookbook/contributing/ contributing/
+
+boards/how-to/allwinner-nezha-d1/ boards/how-to/ubuntu_supported/allwinner-nezha-d1/
+boards/how-to/deepcomputing-fml13v01/ boards/how-to/ubuntu_supported/deepcomputing-fml13v01/
+boards/how-to/microchip-pic64gx1000-discovery/ boards/how-to/ubuntu_supported/microchip-pic64gx1000-discovery/
+boards/how-to/microchip-polarfire-icicle/ boards/how-to/ubuntu_supported/microchip-polarfire-icicle/
+boards/how-to/milk-v-mars-cm/ boards/how-to/ubuntu_supported/milk-v-mars-cm/
+boards/how-to/milk-v-mars/ boards/how-to/ubuntu_supported/milk-v-mars/
+boards/how-to/pine64-star64/ boards/how-to/ubuntu_supported/pine64-star64/
+boards/how-to/qemu-riscv/ boards/how-to/ubuntu_supported/qemu-riscv/
+boards/how-to/raspberry-pi/ boards/how-to/ubuntu_supported/raspberry-pi/
+boards/how-to/sifive-hifive-unmatched/ boards/how-to/ubuntu_supported/sifive-hifive-unmatched/
+boards/how-to/sipeed-licheerv-dock/ boards/how-to/ubuntu_supported/sipeed-licheerv-dock/
+boards/how-to/starfive-visionfive-2-lite/ boards/how-to/ubuntu_supported/starfive-visionfive-2-lite/
+boards/how-to/starfive-visionfive-2/ boards/how-to/ubuntu_supported/starfive-visionfive-2/
+boards/how-to/starfive-visionfive/ boards/how-to/ubuntu_supported/starfive-visionfive/
