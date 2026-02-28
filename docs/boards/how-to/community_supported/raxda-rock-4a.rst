@@ -93,7 +93,7 @@ On reboot hit the enter key repeatedly until you reach the U-Boot prompt
 Fix the boot order
 ------------------
 
-Power off the device. On you computer remove partition 1 and 15 from the SD-card.
+Power off the device. On your computer remove partition 1 and 15 from the SD-card.
 
 .. code-block::
 
