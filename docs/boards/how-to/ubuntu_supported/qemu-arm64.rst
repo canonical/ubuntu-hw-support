@@ -48,6 +48,14 @@ Installing Ubuntu
        :archs: arm64
        :matches: (desktop-arm64\.iso)
 
+#. Copy the file to store EFI variables to the working directory:
+
+   .. code-block:: text
+
+       cp /usr/share/AAVMF/AAVMF_CODE.fd .
+
+   This file is written to during the installation process.
+
 #. Create the disk image onto which you will install Ubuntu; 16 GiB should be
    enough:
 
