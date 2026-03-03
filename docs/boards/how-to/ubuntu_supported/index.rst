@@ -18,6 +18,7 @@ hardware under Ubuntu.
     milk-v-mars
     milk-v-mars-cm
     pine64-star64
+    qemu-arm64
     qemu-riscv
     raspberry-pi
     sifive-hifive-unmatched
