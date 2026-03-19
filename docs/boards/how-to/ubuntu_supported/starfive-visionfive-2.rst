@@ -234,4 +234,4 @@ Limitations
   external GPUs don't work
 
 
-.. _StarFive VisionFive 2: https://www.starfivetech.com/en/site/boards
+.. _StarFive VisionFive 2: https://www.starfivetech.com/en/index.php?s=hardware&c=show&id=14
