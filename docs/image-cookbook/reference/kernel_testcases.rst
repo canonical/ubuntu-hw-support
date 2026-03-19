@@ -20,6 +20,19 @@ Launch a container
     sudo container prune -f
     sudo image rm ubuntu:noble
 
+File systems
+------------
+
+EFI variable file system
+''''''''''''''''''''''''
+
+Check that the EFI variable file system is mounted at
+`/sys/firmware/efi/efivars`.
+
+.. code-block:: text
+
+    mount | grep efivarfs
+
 Firewall
 --------
 
