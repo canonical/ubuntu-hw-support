@@ -182,7 +182,7 @@ Installing live server image
          -cpu rva23s64 \
          -machine virt,acpi=off -m 4G -smp cpus=2 \
          -nographic \
-         -kernel /usr/lib/u-boot/qemu-riscv64_smode/u-boot.bin \
+         -kernel /usr/lib/u-boot/qemu-riscv64_smode/uboot.elf \
          -netdev user,id=net0 \
          -device virtio-net-device,netdev=net0 \
          -device virtio-rng-pci \
@@ -215,7 +215,7 @@ To run your installed Ubuntu image use:
       -cpu rva23s64 \
       -machine virt,acpi=off -m 4G -smp cpus=2 \
       -nographic \
-      -kernel /usr/lib/u-boot/qemu-riscv64_smode/u-boot.bin \
+      -kernel /usr/lib/u-boot/qemu-riscv64_smode/uboot.elf \
       -netdev user,id=net0 \
       -device virtio-net-device,netdev=net0 \
       -device virtio-rng-pci \
