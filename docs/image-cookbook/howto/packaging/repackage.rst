@@ -1,3 +1,5 @@
+.. _repackage-binaries:
+
 Repackaging binaries
 ====================
 

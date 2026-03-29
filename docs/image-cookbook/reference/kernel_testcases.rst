@@ -1,5 +1,7 @@
 .. SPDX-License-Identifier: CC-BY-SA-4.0
 
+.. _kernel-test-cases:
+
 Kernel test cases
 =================
 

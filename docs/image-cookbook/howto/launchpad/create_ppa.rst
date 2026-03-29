@@ -1,5 +1,7 @@
 .. SPDX-License-Identifier: CC-BY-SA-4.0
 
+.. _create-ppa:
+
 Create and manage PPA
 =====================
 

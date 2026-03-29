@@ -1,5 +1,7 @@
 .. SPDX-License-Identifier: CC-BY-SA-4.0
 
+.. _create-launchpad-team:
+
 Create and Manage Launchpad team
 ================================
 
