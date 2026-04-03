@@ -52,7 +52,7 @@ Installing Ubuntu
 
    .. code-block:: text
 
-       cp /usr/share/AAVMF/AAVMF_CODE.fd .
+       cp /usr/share/AAVMF/AAVMF_VARS.fd .
 
    This file is written to during the installation process.
 
