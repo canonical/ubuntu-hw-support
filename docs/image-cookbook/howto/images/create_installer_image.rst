@@ -5,7 +5,7 @@
 Creating customized installer images
 ====================================
 
-Ubuntu provides both pre-installed images as well as installer images.
+Both pre-installed images and installer images are available for Ubuntu.
 
 The build process of installer images involves multiple steps:
 
