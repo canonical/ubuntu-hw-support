@@ -79,7 +79,8 @@ appear:
     :user: ubuntu
     :host: ubuntu
 
-    :input: sudo dmesg
+    sudo dmesg
+
     ...
     [605927.453848] usb 2-2: new full-speed USB device number 2 using xhci-hcd
     [605927.599633] usb 2-2: New USB device found, idVendor=067b, idProduct=2303, bcdDevice= 3.00
@@ -221,7 +222,8 @@ For example:
     :user: ubuntu
     :host: ubuntu
 
-    :input: echo stty cols $COLUMNS rows $LINES
+    echo stty cols $COLUMNS rows $LINES
+
     stty cols 105 rows 51
 
 Paste the output of this command into your serial client, and set the TERM

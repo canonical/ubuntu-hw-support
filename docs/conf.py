@@ -1,7 +1,7 @@
 import datetime
 import os
+import sys
 import yaml
-import ast
 
 from docutils.parsers.rst import roles
 from sphinx.util.docutils import SphinxRole
@@ -55,7 +55,7 @@ html_title = project + " documentation"
 #       curl -H 'Authorization: token <TOKEN>' \
 #         -H 'Accept: application/vnd.github.v3.raw' \
 #         https://api.github.com/repos/canonical/<REPO> | jq '.created_at'
-copyright = "%s CC-BY-SA, %s" % (datetime.date.today().year, author)
+copyright = f"{datetime.date.today().year}, Canonical Ltd"
 
 # Documentation website URL
 #  Update with the official URL of your docs or leave empty if unsure.
@@ -79,8 +79,7 @@ ogp_image = "https://assets.ubuntu.com/v1/cc828679-docs_illustration.svg"
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-html_context
 
 html_context = {
-    "docs_page_url": "https://docs.ubuntu.com",
-    "docs_page_title": "Ubuntu documentation directory",
+    "product_page": "docs.ubuntu.com",
     #
     # Product tag image; the orange part of your logo, shown in the page header
     #  To add a tag image, uncomment and update as needed.
@@ -108,7 +107,7 @@ html_context = {
     #
     # Docs branch in the repo; used in links for viewing the source files
     #  To customise the branch, uncomment and update as needed.
-    'repo_default_branch': 'main',
+    "repo_default_branch": "main",
     #
     # Docs location in the repo; used in links for viewing the source files
     #  To customise the directory, uncomment and update as needed.
@@ -122,14 +121,21 @@ html_context = {
     "display_contributors": False,
     #
     # Required for feedback button
-    'github_issues': 'enabled',
+    "github_issues": "enabled",
+    #
+    "author": author,
+    #
+    "license": {
+        "name": "CC-BY-SA-4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    },
 }
 
 html_extra_path = []
 
 # Allow opt-in build of the OpenAPI "Hello" example so docs stay clean by default.
 if os.getenv("OPENAPI", ""):
-    tags.add("openapi")
+    tags.add("openapi")  # noqa: F821
     html_extra_path.append("how-to/assets/openapi.yaml")
 
 #  To enable the edit button on pages, uncomment and change the link to a
@@ -140,7 +146,7 @@ if os.getenv("OPENAPI", ""):
 # - https://git.launchpad.net/example
 #
 html_theme_options = {
-    'source_edit_link': 'https://github.com/canonical/ubuntu-hw-support',
+    "source_edit_link": "https://github.com/canonical/ubuntu-hw-support",
 }
 
 # Project slug; see https://meta.discourse.org/t/what-is-category-slug/87897
@@ -163,9 +169,9 @@ sitemap_show_lastmod = True
 
 # Exclude generated pages from the sitemap:
 sitemap_excludes = [
-    '404/',
-    'genindex/',
-    'search/',
+    "404/",
+    "genindex/",
+    "search/",
 ]
 
 #  Add more pages to sitemap_excludes if needed. Wildcards are supported.
@@ -182,20 +188,20 @@ templates_path = [".sphinx/_templates"]
 # Redirects #
 #############
 
-# To set up redirects: https://documatt.gitlab.io/sphinx-reredirects/usage.html
-# For example: 'explanation/old-name.html': '../how-to/prettify.html',
+# Add redirects to the 'redirects.txt' file
+# https://sphinxext-rediraffe.readthedocs.io/en/latest/
 
 # To set up redirects in the Read the Docs project dashboard:
 # https://docs.readthedocs.io/en/stable/guides/redirects.html
-# NOTE: If undefined, set to None, or empty,
-#       the sphinx_reredirects extension will be disabled.
-redirects = {}
 
 # Rediraffe (internal) redirects
 # ------------------------------
 
 rediraffe_branch = "main"
 rediraffe_redirects = "redirects.txt"
+
+# Strips '/index.html' from destination URLs when building with 'dirhtml'
+rediraffe_dir_only = True
 
 ###########################
 # Link checker exceptions #
@@ -234,8 +240,7 @@ linkcheck_retries = 3
 
 # Append the path for the ubuntu_images extension; remove this if/when the
 # sphinx_ubuntu_images package is brought up to date
-import sys
-sys.path.append('./_ext')
+sys.path.append("./_ext")
 
 # Custom Sphinx extensions; see
 # https://www.sphinx-doc.org/en/master/usage/extensions/index.html
@@ -244,6 +249,7 @@ extensions = [
     "canonical_sphinx",
     "notfound.extension",
     "sphinx_design",
+    "sphinx_rerediraffe",
     "sphinx_reredirects",
     "sphinx_tabs.tabs",
     "sphinxcontrib.jquery",
@@ -254,7 +260,7 @@ extensions = [
     "sphinx_related_links",
     "sphinx_roles",
     "sphinx_terminal",
-    #"sphinx_ubuntu_images",
+    # "sphinx_ubuntu_images",
     "sphinx_youtube_links",
     "sphinxcontrib.cairosvgconverter",
     "sphinx_last_updated_by_git",
@@ -263,12 +269,11 @@ extensions = [
     # Extensions for this docs set:
     "sphinx-prompt",
     "sphinx.ext.extlinks",
-    "sphinxext.rediraffe",
     "ubuntu_images",
 ]
 
 # Excludes files or directories from processing
-exclude_patterns = []
+exclude_patterns = [".venv"]
 
 # Adds custom CSS files, located under 'html_static_path'
 # html_css_files = []
@@ -291,9 +296,9 @@ rst_epilog = """
 # NOTE: If set, adding ':manpage:' to an .rst file
 #       adds a link to the corresponding man section at the bottom of the page.
 manpages_url = (
-    'https://manpages.ubuntu.com/manpages/questing/en/'
-    'man{section}/{page}.{section}.html'
-    )
+    "https://manpages.ubuntu.com/manpages/questing/en/"
+    "man{section}/{page}.{section}.html"
+)
 
 # Specifies a reST snippet to be prepended to each .rst file
 # This defines a :center: role that centers table cell content.
@@ -314,21 +319,22 @@ if "discourse_prefix" not in html_context and "discourse" in html_context:
     html_context["discourse_prefix"] = html_context["discourse"] + "/t/"
 
 # Workaround for substitutions.yaml
-if os.path.exists('./reuse/substitutions.yaml'):
-    with open('./reuse/substitutions.yaml', 'r') as fd:
+if os.path.exists("./reuse/substitutions.yaml"):
+    with open("./reuse/substitutions.yaml", "r") as fd:
         myst_substitutions = yaml.safe_load(fd.read())
 
 # Add configuration for intersphinx mapping
 intersphinx_mapping = {
-    'subiquity': ('https://canonical-subiquity.readthedocs-hosted.com/en/latest', None),
-    'cloudinit': ('https://cloudinit.readthedocs.io/en/latest/', None),
+    "subiquity": ("https://canonical-subiquity.readthedocs-hosted.com/en/latest", None),
+    "cloudinit": ("https://cloudinit.readthedocs.io/en/latest/", None),
 }
 
 # Set up some simple aliases for bugs and packages
 extlinks = {
-    'lp-bug': ('https://bugs.launchpad.net/bugs/%s', 'LP: #%s'),
-    'lp-pkg': ('https://launchpad.net/ubuntu/+source/%s', '%s'),
+    "lp-bug": ("https://bugs.launchpad.net/bugs/%s", "LP: #%s"),
+    "lp-pkg": ("https://launchpad.net/ubuntu/+source/%s", "%s"),
 }
+
 
 # Redefine the Sphinx 'command' role to behave/render like 'literal'
 class CommandRole(SphinxRole):
@@ -337,12 +343,15 @@ class CommandRole(SphinxRole):
         node = nodes.literal(text, text)
         return [node], []
 
+
 def setup(app):
     roles.register_local_role("command", CommandRole())
+
 
 # Define a custom role for package-name formatting
 def pkg_role(name, rawtext, text, lineno, inliner, options={}, content=[]):
     node = nodes.literal(rawtext, text)
     return [node], []
+
 
 roles.register_local_role("pkg", pkg_role)

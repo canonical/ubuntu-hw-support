@@ -56,7 +56,8 @@ Procedure
        :user: ubuntu
        :host: ubuntu
 
-       :input: inotifywait --event create --format "%w%f" /dev
+       inotifywait --event create --format "%w%f" /dev
+
        Setting up watches.
        Watches established.
        /dev/sda1
@@ -114,7 +115,8 @@ like the following from :command:`inotifywait`:
     :user: ubuntu
     :host: ubuntu
 
-    :input: inotifywait --event create --format "%w%f" /dev
+    inotifywait --event create --format "%w%f" /dev
+
     Setting up watches.
     Watches established.
     /dev/mmcblk0p1

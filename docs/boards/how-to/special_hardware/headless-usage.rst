@@ -208,7 +208,8 @@ The hash can be generated with the :manpage:`mkpasswd(1)` utility from the
     :user: ubuntu
     :host: ubuntu
 
-    :input: mkpasswd --method=SHA-512 --rounds=500000
+    mkpasswd --method=SHA-512 --rounds=500000
+
     Password: # not echoed
     $6$rounds=500000$V0fxPRRWCnTWfCIz$dV9YdtDo5MOrOyXPMw6tuHVtV/dxc3EtRzIyl7AaZD.GZvL0nNvdG1VT4xYwvM0e/j70eYsbRpKKB5CxtpGUd1
 

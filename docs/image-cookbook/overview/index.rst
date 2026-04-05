@@ -54,19 +54,27 @@ Setup Launchpad
 
 Please, follow in sequence these chapters:
 
+.. vale off
+
 * :doc:`../howto/launchpad/create_user`
 * :doc:`../howto/launchpad/create_team`
 * :doc:`../howto/launchpad/create_ppa`
+
+.. vale on
 
 Build packages
 --------------
 
 This process is described in:
 
+.. vale off
+
 * :doc:`../howto/packaging/package`
 * :doc:`../howto/launchpad/upload_ppa`
 * :doc:`../howto/launchpad/consume_ppa`
 * :doc:`../howto/packaging/repackage`
+
+.. vale on
 
 Build the image
 ---------------

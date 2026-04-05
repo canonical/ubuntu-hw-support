@@ -88,7 +88,12 @@ hardware.
 * **Image creation**: :ref:`Create image with ubuntu-image <create-customized-image-with-ubuntu-image>` • :ref:`Create installer images <creating-customized-live-installer-images>`
 * **Kernel packages**: :ref:`Your first kernel package <your-first-kernel-package>` • :ref:`Package a custom kernel <package-kernel>`
 * **Packaging**: :ref:`Package binaries as .deb <package-binaries>` • :ref:`Repackage binaries <repackage-binaries>`
+
+.. vale off
+
 * **Launchpad**: :ref:`Create Launchpad user <create-launchpad-user>` • :ref:`Create team <create-launchpad-team>` • :ref:`Create PPA <create-ppa>` • :ref:`Create Git repository <create_git>` • :ref:`Upload to a PPA <upload-to-ppa>` • :ref:`Consume a PPA <consume-ppa>`
+
+.. vale on
 
 
 Reference and background

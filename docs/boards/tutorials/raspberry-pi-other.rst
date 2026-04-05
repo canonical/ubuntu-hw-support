@@ -35,10 +35,10 @@ Flashing the boot media
 
 .. figure:: /images/rpi-other-software.png
     :alt: The rpi-imager application, displaying a selection of Pi 5, and
-          Ubuntu 24.04.1 desktop
+          Ubuntu 24.04 LTS desktop
 
     The rpi-imager application, displaying a selection of Pi 5, and Ubuntu
-    24.04.1 desktop
+    24.04 LTS desktop
 
 #. On your computer, install rpi-imager:
 
