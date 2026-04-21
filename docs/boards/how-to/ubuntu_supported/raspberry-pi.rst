@@ -101,6 +101,33 @@ C
 .. [#RAM4] Desktop requires 4GB of RAM or more
 
 
+Minimum boot EEPROM dates
+-------------------------
+
+The Raspberry Pi 4 and 5 have a boot EEPROM on board. Certain releases of
+Ubuntu require a minimum EEPROM date for compatibility. The Ubuntu Release
+Upgrader, :manpage:`do-release-upgrade(8)`, will check the EEPROM date before
+permitting an upgrade to proceed. However, if you are using a fresh image you
+must check the EEPROM date meets the following minimums:
+
++-----------------------------+-----------+------------+------------+
+| Raspberry Pi                | 24.04 LTS | 25.10      | 26.04 LTS  |
++=============================+===========+============+============+
+| `4B`_, `400`_, `CM4`_       | -         | 2022-11-25 | 2022-11-25 |
++-----------------------------+-----------+------------+------------+
+| `5 <Pi5_>`_, `500`_, `CM5`_ | -         | -          | 2025-02-11 |
++-----------------------------+-----------+------------+------------+
+
+You can check your boot EEPROM date by running the command
+``rpi-eeprom-update``. If the date is below the required minimum, you can use
+an Ubuntu 24.04 LTS image (which has no minimum required) to run ``sudo
+rpi-eeprom-update -a``. Reboot the machine, then re-check with
+``rpi-eeprom-update`` (the reboot is required to flash the EEPROM).
+
+At this point your Pi's EEPROM should be up to date, and you can proceed to
+upgrade or install the latest version of Ubuntu.
+
+
 Using the pre-installed server image
 ------------------------------------
 
