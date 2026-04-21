@@ -90,9 +90,9 @@ Procedure
 
    .. note::
 
-       We are using :manpage:`sudo(8)` because ``dd`` requires root authority
-       to write to the microSD card device. You will be prompted for your
-       user's password before the write begins (assuming a typical sudo
+       We are using :manpage:`sudo <sudoedit(8)>` because ``dd`` requires root
+       authority to write to the microSD card device. You will be prompted for
+       your user's password before the write begins (assuming a typical sudo
        configuration).
 
 #. Once :command:`dd` has completed, run :manpage:`sync(1)` to be
