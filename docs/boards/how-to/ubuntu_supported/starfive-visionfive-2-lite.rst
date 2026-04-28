@@ -10,6 +10,11 @@ Using the pre-installed server image
 
 #. Download one of the supported images.
 
+   .. ubuntu-images::
+       :releases: noble
+       :archs: riscv64
+       :matches: 24\.04\.([4-9]|\d{2,})-preinstalled-server-riscv64\+jh7110\.img\.xz
+
 #. Flash the pre-installed server image to a microSD card (see
    :ref:`flash-images-to-a-microsd-card`)
 
@@ -107,6 +112,13 @@ Boot the live server image
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 #. Download one of the supported images.
+
+   .. ubuntu-images::
+       :releases: noble
+       :image-types: live-server
+       :archs: riscv64
+       :matches: 24\.04\.([4-9]|\d{2,})-live-server-riscv64\.iso
+
 
 #. Flash the live server image to a microSD card (see
    :ref:`flash-images-to-a-microsd-card`)
